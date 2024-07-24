@@ -1,0 +1,3 @@
+## FONT AWESOME ##
+1. Add a cdn link from the web within the header.
+2. Go to font awesome and search the free icons for the one you want.

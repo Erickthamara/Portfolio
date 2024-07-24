@@ -1,0 +1,37 @@
+@media screen and (max-width: 1400px) {
+  .banner {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-info {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .desktop-nav {
+    display: none;
+  }
+  .hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about {
+    margin-top: 15rem;
+  }
+  .about-achievements {
+    display: block;
+  }
+  .banner,
+  .about-info,
+  .more-about {
+    display: block;
+  }
+  section {
+    height: fit-content;
+  }
+  .banner,
+  .section {
+    margin: 0 5%;
+  }
+}

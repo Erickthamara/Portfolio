@@ -1,0 +1,298 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My site</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!-- The link below is for the font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <script type="text/javascript" src="script.js"></script>
+    <!-- ============================================Navigation Bar======================================== -->
+    <nav class="desktop-nav">
+      <a href="">
+        <i class="fa-brands fa-discord icon"><span>Erick Thamara</span></i></a
+      >
+      <div class="menu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ============================================Navigation Bar======================================== -->
+
+    <!-- ============================================Hamburger Navigation Bar======================================== -->
+    <nav class="hamburger-nav">
+      <a href="">
+        <i class="fa-brands fa-discord icon"><span>Erick Thamara</span></i></a
+      >
+      <div class="hamburger-menu">
+        <div class="hamburger-icon">
+          <a onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ============================================Navigation Bar======================================== -->
+
+    <!-- ============================================Header================================================= -->
+    <header class="banner">
+      <div class="img-container">
+        <img src="assets/Photo.jpeg" alt="" />
+      </div>
+
+      <div class="info">
+        <p>Hello I'm</p>
+        <h2>Erick Thamara</h2>
+        <h3>A Fullstack developer</h3>
+        <div class="info-buttons">
+          <button
+            class="btn"
+            onclick="window.open('./assets/Erick Thamara Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div class="social-icons-container">
+          <a href="https://www.linkedin.com/in/erickthamara" target="_blank"
+            ><i class="fa-brands fa-linkedin social-icon"></i
+          ></a>
+          <a
+            href="https://github.com/Erickthamara?tab=repositories"
+            target="_blank"
+            ><i class="fa-brands fa-square-github social-icon"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <!-- ============================================Header================================================= -->
+
+    <!-- =============================================Section Body=========================================== -->
+    <section class="about" id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+
+      <div class="about-info">
+        <div class="img-container-about">
+          <img src="assets/Photo.jpeg" alt="" />
+        </div>
+
+        <div class="more-about">
+          <div class="about-achievements">
+            <div class="ach1">
+              <i class="fa-solid fa-trophy social-icon"></i>
+              <h3>Experience</h3>
+              <p>2+ years</p>
+              <p>Frontend Development</p>
+            </div>
+            <div class="ach2">
+              <i class="fa-solid fa-user-graduate social-icon"></i>
+              <h3>Education</h3>
+              <p>Bachelor's Degree</p>
+              <p>Information Technology</p>
+            </div>
+          </div>
+          <div class="narration">
+            <p>
+              I started programming while pursuing my Bachelor's degree in
+              Information Technology.From there it has been code and Projects.
+              Trying to build different things in different languages and
+              technology stacks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================Experience================ -->
+    <section class="Experience" id="experience">
+      <p class="section__text__p1">Explore my</p>
+      <h1 class="title">Experience</h1>
+      <div class="development">
+        <div class="frontend-development">
+          <h4>Frontend Development</h4>
+          <div class="my-experiences">
+            <div class="technology">
+              <i class="fa-brands fa-html5 social-icon"></i>
+              <p>HTML</p>
+            </div>
+            <div class="technology">
+              <i class="fa-brands fa-css3-alt social-icon"></i>
+              <p>CSS</p>
+            </div>
+            <div class="technology">
+              <i class="fa-brands fa-js social-icon"></i>
+              <p>Javascript</p>
+            </div>
+            <div class="technology">
+              <i class="fa-brands fa-react social-icon"></i>
+              <p>REACT</p>
+            </div>
+            <div class="technology">
+              <i class="fa-solid fa-n social-icon"></i>
+              <p>NEXT JS</p>
+            </div>
+            <div class="technology">
+              <i class="fa-solid fa-t social-icon"></i>
+              <p>TYPESCRIPT</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="backend-development">
+          <h4>Backend Development</h4>
+          <div class="my-experiences">
+            <div class="technology">
+              <i class="fa-brands fa-python social-icon"></i>
+              <p>Python</p>
+            </div>
+            <div class="technology">
+              <i class="fa-solid fa-bolt social-icon"></i>
+              <p>FLASK</p>
+            </div>
+            <div class="technology">
+              <i class="fa-brands fa-node social-icon"></i>
+              <p>Node</p>
+            </div>
+            <div class="technology">
+              <i class="fa-solid fa-database social-icon"></i>
+              <p>SQL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================Projects================ -->
+    <section class="Projects" id="projects">
+      <p class="section__text__p1">Try out my</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-container">
+        <div class="single-project">
+          <div class="project-img">
+            <img src="assets/Screenshot (11).png" alt="Todo App" />
+          </div>
+          <div class="single-project-description">
+            <h2>To Do App</h2>
+            <p>
+              A to do app built with <i>REACT</i> and <i>FLASK.</i> App hosted
+              on <i>VERCEL</i> and database hosted on <i>SUPABASE</i>
+            </p>
+            <div class="info-buttons">
+              <button
+                class="btn"
+                onclick="location.href='https://todo-fullstack-app.vercel.app/'"
+              >
+                Live Demo
+              </button>
+              <button
+                class="btn"
+                onclick="location.href='https://github.com/Erickthamara/todo_fullstack_app'"
+              >
+                Code
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="single-project">
+          <div class="project-img">
+            <img src="assets/Screenshot (11).png" alt="Todo App" />
+          </div>
+          <div class="single-project-description">
+            <h2>To Do App</h2>
+            <p>
+              A to do app built with <i>REACT</i> and <i>FLASK.</i> App hosted
+              on <i>VERCEL</i> and database hosted on <i>SUPABASE</i>
+            </p>
+            <div class="info-buttons">
+              <button class="btn" onclick="">Live Demo</button>
+              <button class="btn" onclick="">Code</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="single-project">
+          <div class="project-img">
+            <img src="assets/Screenshot (11).png" alt="Todo App" />
+          </div>
+          <div class="single-project-description">
+            <h2>To Do App</h2>
+            <p>
+              A to do app built with <i>REACT</i> and <i>FLASK.</i> App hosted
+              on <i>VERCEL</i> and database hosted on <i>SUPABASE</i>
+            </p>
+            <div class="info-buttons">
+              <button
+                class="btn"
+                onclick="location.href='https://todo-fullstack-app.vercel.app/'"
+              >
+                Live Demo
+              </button>
+              <button
+                class="btn"
+                onclick="location.href='https://github.com/Erickthamara/todo_fullstack_app'"
+              >
+                Code
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================Contact Me================ -->
+    <section class="Contact" id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-details">
+        <div class="contact-channel">
+          <i class="fa-brands fa-linkedin contact-icon"></i>
+          <a href="https://www.linkedin.com/in/erickthamara" target="_blank"
+            ><span>LINKEDIN</span></a
+          >
+        </div>
+        <div class="contact-channel">
+          <i class="fa-regular fa-envelope contact-icon"></i>
+          <p>erickthamara9@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="footer-menu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="copy-right">
+        <p>Copyright © 2023 Erick Thamara. All Rights Reserved.</p>
+      </div>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
